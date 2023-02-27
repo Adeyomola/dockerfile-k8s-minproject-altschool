@@ -3,7 +3,6 @@ FROM nginx:stable
 EXPOSE 80
 
 COPY default.conf /etc/nginx/conf.d/default.conf
-COPY openssl.cnf /cert/openssl.cnf
 
 ARG webroot=/usr/share/nginx/html/app
 ARG repo_url=https://github.com/Adeyomola/adeyomola.github.io
