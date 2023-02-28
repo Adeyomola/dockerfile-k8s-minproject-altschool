@@ -25,11 +25,9 @@ kind: Service
 metadata:
   name: website-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: app
   ports:
     - protocol: TCP
-      port: 100
-      targetPort: 80
-      nodePort: 30000
+      port: 80
